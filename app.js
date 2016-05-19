@@ -13,7 +13,7 @@ app.engine("html", ejs.renderFile);
 app.set("views", path.resolve(__dirname, "views"));
 // defingin static directories
 app.use(express.static(path.resolve(__dirname, "public")));
-
+app.set('port', process.env.PORT || 8080);
 // routing
 app.get("/", function(request, response){
     response.render('index.html', {link : "Home"} );
@@ -31,4 +31,4 @@ app.use(function(request, response, next){
 });
 
 // initialize a server
-app.listen(8080);
+app.listen(app.get('port'));
