@@ -18,6 +18,9 @@ app.set('port', process.env.PORT || 8080);
 app.get("/", function(request, response){
     response.render('index.html', {link : "Home"} );
 });
+app.get("/test", function(request, response){
+    response.render('index2.html');
+});
 app.get("/work", function(request, response){
     response.render('work.html', {link : "Works"});
 });

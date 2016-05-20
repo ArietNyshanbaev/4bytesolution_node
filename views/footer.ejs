@@ -19,9 +19,17 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="javascripts/jquery.easyaudioeffects.1.0.0.min.js"></script>
 	  <script src="javascripts/classie.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="javascripts/smoothscroll.js"></script>
 	  <script src="javascripts/main.js"></script>
+		<script>
+        $(".hovereffect").easyAudioEffects({
+					ogg : "audio/cat.ogg",
+					mp3 : "audio/cat.mp3",
+					eventType : "hover" // or "click"
+				});
+     </script>
 </body>
 </html>
